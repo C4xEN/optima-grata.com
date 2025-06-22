@@ -4,46 +4,52 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Optima Grata • AI Strategy</title>
+  <script>
+    // Editable prices
+    const packagePrices = {
+      strategy: 178,
+      boost: 297,
+      box: 997
+    };
+
+    // Update text on load
+    window.onload = () => {
+      document.getElementById("price-strategy").innerText = `$${packagePrices.strategy}`;
+      document.getElementById("price-boost").innerText = `$${packagePrices.boost}`;
+      document.getElementById("price-box").innerText = `$${packagePrices.box}`;
+      document.getElementById("price-btn").innerText = `Start Now — $${packagePrices.strategy}`;
+    };
+  </script>
 </head>
 <body style="font-family: sans-serif; text-align: center; padding: 40px; background-color: #ffffff;">
 
   <h1>Optima Grata</h1>
   <h2>Premium AI-powered business strategy – no calls, just results.</h2>
 
-  <!-- Image with clickable areas -->
+  <!-- Strategy Image with Hotspots -->
   <img src="media/og-strategy.png" alt="OG Strategy Banner"
        style="max-width: 100%; height: auto; margin: 40px auto; display: block;"
        usemap="#og-strategy-map" />
 
   <map name="og-strategy-map">
-    <!-- Strategy Consult -->
-    <area shape="rect"
-          coords="40,480,520,570"
-          href="https://buy.stripe.com/7sYfZi7Tm9KZgplfLObsc04"
-          alt="Strategy Consult" />
-
-    <!-- Execution Boost -->
-    <area shape="rect"
-          coords="40,600,520,690"
-          href="https://buy.stripe.com/28EfZi7Tm8GV0qn2Z2bsc03"
-          alt="Execution Boost" />
-
-    <!-- Business-in-a-Box -->
-    <area shape="rect"
-          coords="40,720,520,810"
-          href="https://buy.stripe.com/fZu00kddG6yN6OLczCbsc02"
-          alt="Business-in-a-Box" />
+    <area shape="rect" coords="40,480,520,570"
+          href="https://buy.stripe.com/7sYfZi7Tm9KZgplfLObsc04" alt="Strategy Consult" />
+    <area shape="rect" coords="40,600,520,690"
+          href="https://buy.stripe.com/28EfZi7Tm8GV0qn2Z2bsc03" alt="Execution Boost" />
+    <area shape="rect" coords="40,720,520,810"
+          href="https://buy.stripe.com/fZu00kddG6yN6OLczCbsc02" alt="Business-in-a-Box" />
   </map>
 
-  <!-- Fallback call to action -->
+  <!-- Fallback CTA -->
   <p>
-    For just <strong>$178</strong>, gain access to a complete, asynchronous strategy experience.  
+    For just <strong id="price-strategy">$178</strong>, gain access to a complete, asynchronous strategy experience.
     Let OG do the thinking — you do the building.
   </p>
   <p>
     <a href="https://buy.stripe.com/7sYfZi7Tm9KZgplfLObsc04"
        style="display: inline-block; padding: 12px 24px; background-color: black; color: white;
-              text-decoration: none; border-radius: 5px; font-weight: bold;">
+              text-decoration: none; border-radius: 5px; font-weight: bold;"
+       id="price-btn">
       Start Now — $178
     </a>
   </p>
