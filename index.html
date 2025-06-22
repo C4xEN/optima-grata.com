@@ -6,74 +6,107 @@
   <title>Optima Grata + AI Strategy</title>
   <style>
     body {
-      font-family: sans-serif;
-      background-color: #111;
-      color: white;
+      margin: 0;
+      padding: 0;
+      background-color: #0e0e0e;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
       text-align: center;
-      padding: 60px 20px;
+      animation: fadeIn 2s ease-in;
     }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
-    h2 {
-      font-weight: 400;
-      font-size: 1.2rem;
-      color: #ccc;
-      margin-bottom: 30px;
+
+    h1, h2 {
+      margin-bottom: 20px;
     }
-    .button {
-      display: inline-block;
-      margin: 10px;
-      padding: 14px 30px;
-      font-size: 1rem;
-      font-weight: bold;
-      color: white;
-      background-color: #ff4500;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-    }
-    .button:hover {
-      background-color: #e03e00;
-    }
-    .footer {
-      margin-top: 80px;
-      font-size: 0.9rem;
-      color: #bbb;
-    }
-    .footer a {
-      color: #aaa;
-      text-decoration: none;
-      margin: 0 8px;
-    }
+
     img {
       max-width: 100%;
       height: auto;
       margin-bottom: 40px;
+      display: block;
+    }
+
+    .button {
+      display: inline-block;
+      margin: 12px;
+      padding: 14px 28px;
+      background-color: #ff4400;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px rgba(255, 68, 0, 0.5);
+    }
+
+    .button:hover {
+      background-color: #ff3300;
+      box-shadow: 0 0 20px 5px rgba(255, 68, 0, 0.75);
+      transform: scale(1.05);
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 14px;
+      color: #bbb;
+    }
+
+    footer a {
+      color: #bbb;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+
+    footer a:hover {
+      color: #fff;
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <img src="media/og-strategy.png" alt="OG Strategy Banner" usemap="#og-strategy-map" />
-  
-  <h1>Optima Grata</h1>
-  <h2>Premium AI-powered business strategy — no calls, just results.</h2>
-  <p>For just <strong>$178</strong>, gain access to a complete, asynchronous strategy experience. Let OG do the thinking — you do the building.</p>
 
-  <div>
-  <a href="https://buy.stripe.com/fZu00kddG6yN6OLczCbsc02" class="button">Start Now – $178</a>
-  <a href="https://buy.stripe.com/28EfZi7Tm8GV0qn2Z2bsc03" class="button">Upgrade & Automate – $297</a>
-  <a href="https://buy.stripe.com/7sYfZi7Tm9KZgplfLObsc04" class="button">Launch My Business – $997</a>
-</div>
+  <div class="container">
+    <img src="media/og-strategy.png" alt="OG Strategy Banner" usemap="#og-strategy-map" />
+    
+    <map name="og-strategy-map">
+      <area shape="rect" coords="40,480,520,570" href="https://buy.stripe.com/7sYfZi7Tm9KZgplfLObsc04" alt="Strategy Consult">
+      <area shape="rect" coords="40,600,520,690" href="https://buy.stripe.com/28EfZi7Tm8GV0qn2Z2bsc03" alt="Execution Boost">
+      <area shape="rect" coords="40,720,520,810" href="https://buy.stripe.com/fZu00kddG6yN6OLczCbsc02" alt="Business-in-a-Box">
+    </map>
 
-  <div class="footer">
-    <p>Need to Contact Us?<br>
-    <a href="mailto:admin@optima-grata.com">admin@optima-grata.com</a></p>
-    <a href="tos.html">Terms of Service</a> |
-    <a href="privacy.html">Privacy Policy</a>
+    <h1>Optima Grata</h1>
+    <h2>Premium AI-powered business strategy — no calls, just results.</h2>
+
+    <p>
+      For just <strong>$178</strong>, gain access to a complete, asynchronous strategy experience.<br />
+      Let OG do the thinking — you do the building.
+    </p>
+
+    <a class="button" href="https://buy.stripe.com/7sYfZi7Tm9KZgplfLObsc04">Start Now – $178</a>
+    <br />
+    <a class="button" href="https://buy.stripe.com/28EfZi7Tm8GV0qn2Z2bsc03">Upgrade & Automate – $297</a>
+    <a class="button" href="https://buy.stripe.com/fZu00kddG6yN6OLczCbsc02">Launch My Business – $997</a>
+
+    <footer>
+      <p>Need to Contact Us?<br />
+      <a href="mailto:admin@optima-grata.com">admin@optima-grata.com</a></p>
+      <p>
+        <a href="tos.html">Terms of Service</a> |
+        <a href="privacy.html">Privacy Policy</a>
+      </p>
+    </footer>
   </div>
+
 </body>
 </html>
