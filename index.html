@@ -4,61 +4,85 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Optima Grata • AI Strategy</title>
-  <script>
-    const packagePrices = {
-      strategy: 178,
-      boost: 297,
-      box: 997
-    };
-
-    window.onload = () => {
-      document.getElementById("price-strategy").innerText = `$${packagePrices.strategy}`;
-      document.getElementById("price-boost").innerText = `$${packagePrices.boost}`;
-      document.getElementById("price-box").innerText = `$${packagePrices.box}`;
-      document.getElementById("price-btn").innerText = `Start Now — $${packagePrices.strategy}`;
-    };
-  </script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0d0d0d;
+      color: #ffffff;
+      text-align: center;
+    }
+    .banner {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      animation: fadeIn 2s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    h1 {
+      font-size: 2.8rem;
+      margin-top: 40px;
+    }
+    h2 {
+      font-weight: 300;
+      font-size: 1.5rem;
+      margin-top: 0;
+    }
+    .btn {
+      display: inline-block;
+      padding: 15px 30px;
+      margin: 25px 10px;
+      background: linear-gradient(45deg, #ff4500, #ff6600);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 1.2rem;
+      transition: transform 0.3s ease;
+    }
+    .btn:hover {
+      transform: scale(1.05);
+    }
+    .footer {
+      margin-top: 60px;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+    .legal-links a {
+      color: #aaa;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    .legal-links a:hover {
+      color: #fff;
+    }
+  </style>
 </head>
-<body style="font-family: sans-serif; text-align: center; padding: 40px; background-color: #ffffff;">
+<body>
+  <img class="banner" src="media/og-strategy.png" alt="OG Strategy Banner" />
 
   <h1>Optima Grata</h1>
-  <h2>Premium AI-powered business strategy – no calls, just results.</h2>
-
-  <img src="media/og-strategy.png" alt="OG Strategy Banner"
-       style="max-width: 100%; height: auto; margin: 40px auto; display: block;"
-       usemap="#og-strategy-map" />
-
-  <map name="og-strategy-map">
-    <area shape="rect" coords="40,480,520,570"
-          href="https://buy.stripe.com/7sYfZi7Tm9KZgplfLObsc04" alt="Strategy Consult" />
-    <area shape="rect" coords="40,600,520,690"
-          href="https://buy.stripe.com/28EfZi7Tm8GV0qn2Z2bsc03" alt="Execution Boost" />
-    <area shape="rect" coords="40,720,520,810"
-          href="https://buy.stripe.com/fZu00kddG6yN6OLczCbsc02" alt="Business-in-a-Box" />
-  </map>
+  <h2>Premium AI-powered business strategy — no calls, just results.</h2>
 
   <p>
-    For just <strong id="price-strategy">$178</strong>, gain access to a complete, asynchronous strategy experience.
-    Let OG do the thinking — you do the building.
-  </p>
-  <p>
-  <a href="https://buy.stripe.com/7sYfZi7Tm9KZgplfLObsc04"
-     style="display: inline-block; padding: 12px 24px; background-color: black; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
-    Start Now – $178
-  </a>
-</p>
-
-  <p>
-    Need to Contact Us?<br>
-    <a href="mailto:admin@optima-grata.com">admin@optima-grata.com</a>
+    For just <strong>$178</strong>, gain access to a complete, asynchronous strategy experience. Let OG do the thinking — you do the building.
   </p>
 
-  <hr style="margin: 40px auto; width: 50%;">
+  <a class="btn" href="https://buy.stripe.com/7sYfZi7Tm9KZgplfLObsc04">Start Now – $178</a>
 
-  <p>
-    <a href="tos.html">Terms of Service</a> |
-    <a href="privacy.html">Privacy Policy</a>
-  </p>
+  <div>
+    <a class="btn" href="https://buy.stripe.com/28EfZi7Tm8GV0qn2Z2bsc03">Upgrade & Automate – $297</a>
+    <a class="btn" href="https://buy.stripe.com/fZu00kddG6yN6OLczCbsc02">Launch My Business – $997</a>
+  </div>
 
+  <div class="footer">
+    <p>Need to Contact Us? <br><a href="mailto:admin@optima-grata.com">admin@optima-grata.com</a></p>
+    <div class="legal-links">
+      <a href="tos.html">Terms of Service</a> | <a href="privacy.html">Privacy Policy</a>
+    </div>
+  </div>
 </body>
 </html>
