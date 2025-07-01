@@ -1,60 +1,84 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Optima Grata – AI Strategy</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <title>Optima Grata | AI-powered Business Success</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
     <style>
         body {
-            font-family: 'Inter', sans-serif;
-            background-color: #0f0f0f;
-            color: white;
+            font-family: 'Roboto', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 40px 20px;
             text-align: center;
-            padding: 60px 20px;
         }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+
         h1 {
-            color: #ff4f00;
-            font-size: 2.5em;
-            margin-bottom: 10px;
+            color: #FF4500;
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
         }
-        p {
-            color: #ccc;
-            font-size: 1.1em;
+
+        p.subtitle {
+            font-size: 1.2rem;
             margin-bottom: 40px;
         }
-        .btn-container {
+
+        .packages {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            flex-direction: column;
             gap: 20px;
         }
+
         .btn {
-            background-color: #ff4f00;
-            color: white;
-            padding: 15px 25px;
-            border: none;
-            border-radius: 5px;
-            font-size: 1em;
-            font-weight: 600;
-            cursor: pointer;
+            background-color: #FF4500;
+            color: #ffffff;
+            padding: 15px;
+            font-size: 1.2rem;
             text-decoration: none;
+            border-radius: 10px;
             transition: background-color 0.3s ease;
         }
+
         .btn:hover {
-            background-color: #e84300;
+            background-color: #e03d00;
+        }
+
+        @media(min-width: 768px){
+            .packages {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .btn {
+                flex: 1;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to Optima Grata</h1>
-    <p>Choose the plan that fits your goal. Fast, premium, AI-powered execution.</p>
-    <div class="btn-container">
-        <a href="https://buy.stripe.com/eVq4gA0qU6yN5KH7fibsc05" class="btn">Quick Win Blueprint – $9</a>
-        <a href="https://buy.stripe.com/6oU4gA2z20apa0Xbvybsc07" class="btn">Strategy Consult – $178</a>
-        <a href="https://buy.stripe.com/28EfZi7Tm8GV0qn2Z2bsc03" class="btn">Execution Boost – $297</a>
-        <a href="https://buy.stripe.com/7sYfZi7Tm9KZgplfLObsc04" class="btn">Business Launch – $997</a>
+    <div class="container">
+        <h1>Unlock Your Business Potential with Optima Grata</h1>
+        <p class="subtitle">Expert-crafted strategies and automation to powerfully launch, scale, and optimize your online success—tailored specifically for ambitious businesses and entrepreneurs.</p>
+
+        <div class="packages">
+            <a class="btn" href="https://buy.stripe.com/eVq4gA0qU6yN5KH7fibsc05">$9 – Quick Win Blueprint</a>
+            <a class="btn" href="https://buy.stripe.com/6oU4gA2z20apa0Xbvybsc07">$178 – Strategy Consult</a>
+            <a class="btn" href="https://buy.stripe.com/28EfZi7Tm8GV0qn2Z2bsc03">$297 – Execution Boost</a>
+            <a class="btn" href="https://buy.stripe.com/7sYfZi7Tm9KZgplfLObsc04">$997 – Business Launch</a>
+        </div>
     </div>
 </body>
 </html>
