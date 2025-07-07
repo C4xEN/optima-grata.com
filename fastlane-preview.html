@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OG Canvas Preview</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f8f9fa;
+      color: #222;
+    }
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background: linear-gradient(135deg, #1e1e2f, #3f3f5e);
+      color: white;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.25rem;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .card h3 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+    .card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+    .card button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #1e1e2f;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .card button:hover {
+      background: #3f3f5e;
+    }
+  </style>
+</head>
+<body>
+  <div class="hero" data-aos="fade-up">
+    <h1>Unlock. Automate. Profit.</h1>
+    <p>Your Strategy. Your Tools. Your Time to Scale.</p>
+  </div>
+
+  <section class="products">
+    <div class="card" data-aos="fade-up" data-aos-delay="100">
+      <h3>Quick Win Blueprint</h3>
+      <p>Fast-track your first digital win in under 60 minutes.</p>
+      <a href="https://buy.stripe.com/eVq4gA0qU6yN5KH7fibsc05"><button>Buy Now — $9</button></a>
+    </div>
+
+    <div class="card" data-aos="fade-up" data-aos-delay="200">
+      <h3>Strategy Consult</h3>
+      <p>1:1 AI Business Strategy Session + PDF Roadmap.</p>
+      <a href="https://buy.stripe.com/6oU4gA2z20apa0Xbvybsc07"><button>Book Now — $178</button></a>
+    </div>
+
+    <div class="card" data-aos="fade-up" data-aos-delay="300">
+      <h3>Execution Boost</h3>
+      <p>Hands-on guidance, tech help, and complete system setup.</p>
+      <a href="https://buy.stripe.com/28EfZi7Tm8GV0qn2Z2bsc03"><button>Boost Me — $297</button></a>
+    </div>
+
+    <div class="card" data-aos="fade-up" data-aos-delay="400">
+      <h3>Business Launch</h3>
+      <p>Full business buildout: strategy, setup, automation, branding.</p>
+      <a href="https://buy.stripe.com/7sYfZi7Tm9KZgplfLObsc04"><button>Launch It — $997</button></a>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
