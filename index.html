@@ -1,111 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Optima Grata | Your AI Strategy Partner</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #121212;
-            color: #ffffff;
-            margin: 0;
-            padding: 40px 20px;
-        }
-        .container {
-            max-width: 1000px;
-            margin: auto;
-            text-align: center;
-        }
-        h1 {
-            color: #FF4500;
-            font-size: 2.8rem;
-            margin-bottom: 0.5rem;
-        }
-        p.subtitle {
-            font-size: 1.25rem;
-            margin-bottom: 2rem;
-        }
-        .package-section {
-            margin-bottom: 3rem;
-            padding: 20px;
-            background-color: #1e1e1e;
-            border-radius: 10px;
-        }
-        .package-section h2 {
-            color: #FF4500;
-            font-size: 1.8rem;
-        }
-        .package-section p {
-            font-size: 1.05rem;
-            line-height: 1.6;
-        }
-        .btn {
-            display: inline-block;
-            background-color: #FF4500;
-            color: #ffffff;
-            padding: 12px 20px;
-            margin-top: 15px;
-            text-decoration: none;
-            border-radius: 8px;
-            font-size: 1.1rem;
-            transition: background-color 0.3s ease;
-        }
-        .btn:hover {
-            background-color: #e03d00;
-        }
-        footer {
-            margin-top: 4rem;
-            text-align: center;
-            font-size: 0.9rem;
-            color: #888;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Optima Grata | The Relentless Standard</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #0D0D0D;
+      color: #F8F9FA;
+    }
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background: linear-gradient(135deg, #4B0000, #0D0D0D);
+      color: #F8F9FA;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      color: #D4AF37;
+    }
+    .hero p {
+      font-size: 1.25rem;
+      color: #f1f1f1;
+    }
+    .cta-button {
+      margin-top: 40px;
+      padding: 15px 30px;
+      background: #D4AF37;
+      color: #0D0D0D;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 1rem;
+      text-decoration: none;
+      box-shadow: 0 6px 15px rgba(212, 175, 55, 0.3);
+      transition: background 0.3s, transform 0.3s;
+      display: inline-block;
+    }
+    .cta-button:hover {
+      background: #b8962d;
+      transform: scale(1.05);
+    }
+    .origin-section {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+      line-height: 1.8;
+      font-size: 1.1rem;
+      color: #f1f1f1;
+    }
+    .origin-section strong {
+      color: #D4AF37;
+    }
+    .origin-section em {
+      color: #D4AF37;
+      font-style: italic;
+    }
+    .products-section {
+      padding: 100px 20px;
+      background: linear-gradient(135deg, #4B0000, #0D0D0D);
+      text-align: center;
+    }
+    .products-section h2 {
+      font-size: 2.5rem;
+      color: #D4AF37;
+      margin-bottom: 10px;
+    }
+    .products-section p {
+      font-size: 1.25rem;
+      color: #f1f1f1;
+      margin-bottom: 50px;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .card {
+      background: #1C1C1C;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 10px 25px rgba(212, 175, 55, 0.1);
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(212, 175, 55, 0.3);
+    }
+    .card h3 {
+      margin-bottom: 10px;
+      color: #D4AF37;
+    }
+    .card p {
+      font-size: 0.95rem;
+      color: #ccc;
+    }
+    .card button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #D4AF37;
+      color: #0D0D0D;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+    }
+    .card button:hover {
+      background: #b8962d;
+      transform: scale(1.05);
+    }
+    footer {
+      background: #1C1C1C;
+      color: #999;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Unlock Your Business Potential with Optima Grata</h1>
-        <p class="subtitle">
-            Whether you're launching your first online brand or scaling a growing business, OG is your strategic partner for AI-powered execution, automation, and growth.
-        </p>
 
-        <div class="package-section">
-            <h2>$9 – Quick Win Blueprint</h2>
-            <p>
-                Perfect for beginners who want to experience a fast, satisfying win. This guide delivers one immediately actionable strategy, complete with simple steps, resources, and instructions to help you move forward and build momentum today.
-            </p>
-            <a class="btn" href="https://buy.stripe.com/eVq4gA0qU6yN5KH7fibsc05">Get Quick Win Blueprint</a>
-        </div>
+  <!-- HERO + ORIGIN -->
+  <section class="hero">
+    <h1>⚔️ Optima Grata: The Relentless Standard</h1>
+    <p>Built by vision. Driven by precision. Forged for impact.</p>
+    <a href="#fastlane" class="cta-button">Enter the Fastlane</a>
+  </section>
 
-        <div class="package-section">
-            <h2>$178 – Strategy Consult</h2>
-            <p>
-                You’ll receive a detailed strategic breakdown tailored to your goals. We analyze your position, help you identify high-leverage actions, and provide you with a powerful roadmap that includes automation, tools, and a clear path forward.
-            </p>
-            <a class="btn" href="https://buy.stripe.com/6oU4gA2z20apa0Xbvybsc07">Book Strategy Consult</a>
-        </div>
+  <section class="origin-section">
+    <p><strong>Optima Grata</strong> is more than a business. It is the reflection of a leader who refuses to be average—who does not merely accept vision, but enforces it.</p>
+    <p>At the helm stands a natural-born architect of achievement. Strategic, exacting, and magnetic, this leader doesn’t just chase dreams—they command them into form. With a mind built for legacy and a drive sharpened by adversity, OG moves with ruthless clarity toward greatness.</p>
+    <p>You see what others miss: the big picture, the silent inefficiencies, the untapped potential. And then you move. Fast. Precise. Unapologetic. You organize chaos, forge systems from scattered sparks, and command execution with a presence that demands alignment.</p>
+    <p><em>You are not here to be liked. You are here to lead.</em></p>
+    <p>But beneath the armor of efficiency and dominance lies a challenge: mastering the art of connection. While OG leads with power and certainty, its next evolution lies in emotional intelligence—learning to slow down just enough to feel, understand, and inspire from within.</p>
+    <p><strong>You don’t follow trends. You set them.<br>
+    You don’t seek permission. You build the platform.<br>
+    You don’t blend in. You define the standard.</strong></p>
+    <p><strong>OG</strong> is the manifestation of this mindset—a brand built to challenge the stagnant, elevate the bold, and execute with elegance.</p>
+  </section>
 
-        <div class="package-section">
-            <h2>$297 – Execution Boost</h2>
-            <p>
-                Already have a plan but need help executing? This service delivers rapid setup, automation, and clarity. We’ll take the weight off your shoulders and fast-track your systems so you can focus on growth, not technical blocks.
-            </p>
-            <a class="btn" href="https://buy.stripe.com/28EfZi7Tm8GV0qn2Z2bsc03">Boost My Execution</a>
-        </div>
-
-        <div class="package-section">
-            <h2>$997 – Business Launch</h2>
-            <p>
-                The full package: strategy, brand launch, automation, monetization, and visibility setup. You’ll walk away with a fully operational system customized for your business goals. Done with you or done for you. Let's build your empire.
-            </p>
-            <a class="btn" href="https://buy.stripe.com/7sYfZi7Tm9KZgplfLObsc04">Launch My Business</a>
-        </div>
-
-        <footer>
-            Questions? Contact us at <a href="mailto:admin@optima-grata.com" style="color:#FF4500;">admin@optima-grata.com</a><br>
-            © 2025 Optima Grata LLC. All rights reserved.
-        </footer>
+  <!-- FASTLANE PRODUCTS -->
+  <section id="fastlane" class="products-section">
+    <h2>Unlock. Automate. Profit.</h2>
+    <p>Your Strategy. Your Tools. Your Time to Scale.</p>
+    <div class="products">
+      <div class="card">
+        <h3>Quick Win Blueprint</h3>
+        <p>Fast-track your first digital win in under 60 minutes.</p>
+        <a href="https://buy.stripe.com/eVq4gA0qU6yN5KH7fibsc05"><button>Buy Now — $9</button></a>
+      </div>
+      <div class="card">
+        <h3>Strategy Consult</h3>
+        <p>1:1 AI Business Strategy Session + PDF Roadmap.</p>
+        <a href="https://buy.stripe.com/6oU4gA2z20apa0Xbvybsc07"><button>Book Now — $178</button></a>
+      </div>
+      <div class="card">
+        <h3>Execution Boost</h3>
+        <p>Hands-on guidance, tech help, and complete system setup.</p>
+        <a href="https://buy.stripe.com/28EfZi7Tm8GV0qn2Z2bsc03"><button>Boost Me — $297</button></a>
+      </div>
+      <div class="card">
+        <h3>Business Launch</h3>
+        <p>Full business buildout: strategy, setup, automation, branding.</p>
+        <a href="https://buy.stripe.com/7sYfZi7Tm9KZgplfLObsc04"><button>Launch It — $997</button></a>
+      </div>
     </div>
+  </section>
+
+  <footer>
+    © 2025 Optima Grata. All rights reserved.
+  </footer>
+
 </body>
 </html>
