@@ -6,12 +6,36 @@
   <title>OG Canvas Preview v2</title>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <style>
+    :root {
+    --burgundy: #4b0000;
+    --gold: #d4af37;
+    --black: #000000;
+    --gray: #111111;
+  }
     body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #0D0D0D;
-      color: #F8F9FA;
-    }
+    background-color: var(--burgundy);
+    color: white;
+  }
+
+  .bg-primary { background-color: var(--burgundy); }
+  .bg-accent { background-color: var(--gold); }
+  .text-accent { color: var(--gold); }
+  .text-dark { color: var(--black); }
+
+  .btn-cta {
+    background-color: var(--gold);
+    color: var(--burgundy);
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  }
+
+  .btn-cta:hover {
+    background-color: white;
+    color: var(--burgundy);
+  }
     .hero {
       text-align: center;
       padding: 100px 20px;
