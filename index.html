@@ -203,6 +203,17 @@
   <footer>
     © 2025 Optima Grata. All rights reserved.
   </footer>
+  <script>
+  function toggleInfo(header) {
+    const info = header.nextElementSibling;
+    const isVisible = info.style.display === "block";
+    info.style.display = isVisible ? "none" : "block";
+    header.innerHTML = header.innerHTML.includes('▾') ?
+      header.innerHTML.replace('▾', '▸') :
+      header.innerHTML.replace('▸', '▾');
+  }
+</script>
+
 
 </body>
 </html>
