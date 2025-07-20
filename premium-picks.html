@@ -5,26 +5,142 @@
   <title>OG Premium Picks – High Ticket Tiny Homes & Elite Tech</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-  body { font-family: 'Segoe UI', Arial, sans-serif; background: #1a1011; color: #f4ece8; margin: 0; }
-  header { background: linear-gradient(90deg,#720026 60%,#400000 100%); color: #fff; padding: 2rem 0 1rem 0; text-align: center; box-shadow: 0 2px 16px #72002699; }
-  h1 { margin: 0 0 0.5rem 0; font-size: 2.6rem; letter-spacing:0.03em;}
-  h2 { color: #a11a21; margin-top: 2rem; }
-  .section { max-width: 800px; margin: 2rem auto; background: #261415; border-radius: 16px; box-shadow: 0 4px 18px #3a1a1c; padding: 2rem; }
-  .products-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
-  .product-card { background: #2d0e13; border-radius: 10px; box-shadow: 0 2px 10px #a11a2188; transition: transform .2s, box-shadow .2s; padding: 1.2rem 1rem; position: relative;}
-  .product-card:hover { transform: translateY(-7px) scale(1.035); box-shadow: 0 8px 24px #720026cc; }
-  .product-title { font-size: 1.1rem; font-weight: 600; color: #ffd700; margin-bottom: 0.6rem; cursor:pointer;}
-  .product-desc { font-size: 1rem; margin: 0.2rem 0 1rem 0; color: #ffe1dc;}
-  .buy-btn { display: inline-block; background: #a11a21; color: #fff; padding: 0.5rem 1.5rem; border-radius: 7px; font-weight: 500; text-decoration: none; transition: background 0.18s; margin-top:0.5rem; border: 2px solid #ffd700;}
-  .buy-btn:hover { background: #ffd700; color: #720026; }
-  .accordion {cursor:pointer; background:none; border:none; outline:none; width:100%; text-align:left; padding:0; font-size:1.1rem; color:#ffd700; transition:color .18s;}
-  .accordion:after {content:"▼"; float:right; font-size:.8rem; margin-top:0.2rem;}
-  .active:after {content:"▲";}
-  .panel {padding:0.2rem 0 0.7rem 0; display:none;}
-  .active + .panel {display:block;}
-  @media (max-width: 800px) {.products-grid{grid-template-columns:1fr;}}
-  @media (max-width: 600px) {.section {padding: 1rem; } h1 {font-size:2rem;} .product-title{font-size:1rem;} }
-  .disclaimer { text-align: center; font-size: 0.97rem; color: #ffd700; margin-top: 2.5rem; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: radial-gradient(ellipse at center, #231012 80%, #0a0607 100%);
+    color: #f9ece0;
+    margin: 0;
+  }
+  header {
+    background: linear-gradient(90deg, #720026 60%, #400000 100%);
+    color: #fff;
+    padding: 2rem 0 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 16px #720026bb;
+    border-bottom: 3px solid #ffd700;
+  }
+  h1 {
+    margin: 0 0 0.5rem 0;
+    font-size: 2.6rem;
+    letter-spacing: 0.03em;
+    text-shadow: 0 2px 6px #3a1a1c88, 0 0px 24px #ffd70044;
+  }
+  h2 {
+    color: #a11a21;
+    margin-top: 2rem;
+    text-shadow: 0 1px 0 #ffd70022;
+    border-left: 6px solid #ffd700;
+    padding-left: 0.4em;
+    margin-bottom: 1.5rem;
+  }
+  .section {
+    max-width: 800px;
+    margin: 2rem auto;
+    background: rgba(38,20,21,0.98);
+    border-radius: 16px;
+    box-shadow: 0 12px 38px #00000088, 0 1.5px 32px #ffd70018;
+    padding: 2rem;
+    border: 1.5px solid #ffd70055;
+  }
+  .products-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .product-card {
+    background: #2d0e13;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px #a11a2177, 0 2px 10px #ffd70033;
+    transition: transform .2s, box-shadow .2s, border .18s;
+    padding: 1.2rem 1rem;
+    position: relative;
+    border: 2.5px solid #ffd700aa;
+    outline: 1px solid #a11a2185;
+  }
+  .product-card:hover {
+    transform: translateY(-9px) scale(1.045);
+    box-shadow: 0 12px 48px #72002699, 0 4px 24px #ffd70077;
+    border-color: #ffd700;
+  }
+  .product-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #ffd700;
+    margin-bottom: 0.6rem;
+    cursor: pointer;
+    letter-spacing: 0.01em;
+    text-shadow: 0 1px 4px #a11a2140, 0 0 8px #ffd70024;
+    border-bottom: 1px dotted #ffd70044;
+    background: none;
+  }
+  .product-desc {
+    font-size: 1rem;
+    margin: 0.2rem 0 1rem 0;
+    color: #ffe1dc;
+  }
+  .buy-btn {
+    display: inline-block;
+    background: #a11a21;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    border-radius: 7px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.18s, color 0.18s, border 0.18s;
+    margin-top: 0.5rem;
+    border: 2.5px solid #ffd700;
+    letter-spacing: 0.01em;
+    box-shadow: 0 2px 18px #ffd70033;
+  }
+  .buy-btn:hover {
+    background: #ffd700;
+    color: #720026;
+    border-color: #a11a21;
+    box-shadow: 0 8px 24px #ffd70099;
+  }
+  .accordion {
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    text-align: left;
+    padding: 0;
+    font-size: 1.1rem;
+    color: #ffd700;
+    transition: color .18s;
+  }
+  .accordion:after {
+    content: "▼";
+    float: right;
+    font-size: .8rem;
+    margin-top: 0.2rem;
+  }
+  .active:after {
+    content: "▲";
+  }
+  .panel {
+    padding: 0.2rem 0 0.7rem 0;
+    display: none;
+  }
+  .active + .panel {
+    display: block;
+  }
+  @media (max-width: 800px) {
+    .products-grid { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 600px) {
+    .section { padding: 1rem; }
+    h1 { font-size: 2rem; }
+    .product-title { font-size: 1rem; }
+  }
+  .disclaimer {
+    text-align: center;
+    font-size: 0.97rem;
+    color: #ffd700;
+    margin-top: 2.5rem;
+    text-shadow: 0 0 10px #40000066;
+  }
 </style>
 
 </head>
